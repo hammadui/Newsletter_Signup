@@ -54,30 +54,3 @@ app.listen(process.env.PORT||3000,function(){
 
 // e0efcfd4b8
 // 28e17e819341065c8b765959900238d5-us14
-
-
-
-
-
-// app.post('/audience/add/member', async (req, res) => {
-//     const { listId, firstname, lastname, email, tag } = req.body
-// const addListMember = async () => {
-//         try {
-//             const response = await  mailchimp.lists.addListMember(listId, {
-//                 email_address: email,
-//                 status: 'subscribed',
-//                 email_type: 'html',
-//                 merge_fields: {
-//                     FNAME: firstname,
-//                     LNAME: lastname
-//                 },
-//                 tags: [tag]
-//             })
-//             res.send(response)
-//         }
-//         catch (err) {
-//             res.status(400).send(err)
-//         }
-//     }
-//   addListMember()
-// })
