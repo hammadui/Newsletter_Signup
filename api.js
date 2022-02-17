@@ -18,8 +18,8 @@ app.post('/',function(req,res){
   var lname = req.body.lname;
   var email = req.body.email;
   mailchimp.setConfig({
-    apiKey: "28e17e819341065c8b765959900238d5-us14",
-    server: "us14",
+    apiKey: "YOUR API KEY OF MAILCHIMP",
+    server: "YOUR SERVER",
   });
   async function run() {
     try{
@@ -52,5 +52,3 @@ app.listen(process.env.PORT||3000,function(){
   console.log("Server started!!!");
 });
 
-// e0efcfd4b8
-// 28e17e819341065c8b765959900238d5-us14
